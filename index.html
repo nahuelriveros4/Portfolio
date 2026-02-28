@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nahuel Riveros | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;700&display=swap"
+    rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2300f2ff' class='bi bi-code-square' viewBox='0 0 16 16'%3E%3Cpath d='M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z'/%3E%3Cpath d='M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0m2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0'/%3E%3C/svg%3E">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-logo">DEV.NAHUEL</div>
+      <div class="nav-links">
+        <a href="#stack">Stack</a>
+        <a href="#projects">Projectos</a>
+        <a href="#contact">Contacto</a>
+      </div>
+      <a href="assets/CV - Nahuel Riveros .pdf" download class="btn-resume">Descargar CV</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="profile-wrapper">
+      <img src="img/perfil.jpg" alt="Nahuel Riveros">
+    </div>
+    <h1>Nahuel Riveros</h1>
+    <p class="role">> Estudiante de Lic. en Ciencias de la Computación</p>
+    <p class="hero-desc">
+      Enfocado en la creación de soluciones eficientes y escalables. Me apasiona aplicar fundamentos algorítmicos para
+      resolver desafíos del mundo real y transformar ideas en software funcional.
+    </p>
+    <div class="hero-btns">
+      <a href="https://github.com/nahuelriveros4" class="btn-social" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/nahuelriveros4/" class="btn-social" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <section id="stack" class="section">
+    <h3 class="section-title">STACK TECNOLOGICO</h3>
+    <div class="stack-grid">
+      <div class="stack-card"><span>Python</span></div>
+      <div class="stack-card"><span>Flask</span></div>
+      <div class="stack-card"><span>JavaScript</span></div>
+      <div class="stack-card"><span>SQL</span></div>
+      <div class="stack-card"><span>HTML</span></div>
+      <div class="stack-card"><span>CSS</span></div>
+      <div class="stack-card"><span>Git</span></div>
+      <div class="stack-card"><span>Vercel</span></div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h3 class="section-title">PROYECTS</h3>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-img-wrapper">
+          <a href="https://generador-de-contrase-as-five.vercel.app/" target="_blank"><img src="img/generador.png" alt="Mockup de Password Generator Pro"
+            class="project-screenshot"></a>
+        </div>
+        <div class="project-content">
+          <h4>Password Generator Pro</h4>
+          <p>> Generador de claves seguro con lógica en Python y despliegue serverless en Vercel.</p>
+          <div class="tags">
+            <span>Python</span><span>Flask</span><span>HTML</span><span>Css</span><span>JavaScript</span><span>Vercel</span>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="project-card">
+                <div class="project-img" style="background-image: url('img/project2.jpg');"></div>
+                <div class="project-content">
+                    <h4>DualCode Solutions</h4>
+                    <p>> Co-fundador de agencia enfocada en desarrollo de software y soluciones digitales personalizadas.</p>
+                    <div class="tags"><span>Business</span><span>FullStack</span></div>
+                </div>
+            </div> -->
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>> Contactame</h3>
+        <p>Actualmente disponible para nuevos proyectos y colaboraciones tecnológicas.</p>
+        <p>📧 nahuelriveros121@gmail.com</p>
+        <p>📍 San Juan, Argentina</p>
+      </div>
+      <form action="https://formspree.io/f/xqedjrpd" method="POST" class="contact-form">
+        <input type="text" name="nombre" placeholder="NOMBRE" required>
+        <input type="email" name="email" placeholder="EMAIL" required>
+        <textarea name="mensaje" placeholder="MENSAJE" required></textarea>
+        <button type="submit">CONTACTAR</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 NAHUEL RIVEROS. TODOS LOS DERECHOS RESERVADOS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
