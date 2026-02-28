@@ -210,14 +210,28 @@ h1 {
   margin-bottom: 15px;
 }
 
+.tags {
+  display: flex;
+  flex-wrap: wrap; /* Esto permite que los tags bajen a la siguiente línea si no hay espacio */
+  gap: 8px; /* Espaciado uniforme entre tags sin usar margin-right */
+  margin-top: 10px;
+}
+
 .tags span {
   font-size: 0.7rem;
   background: rgba(255, 255, 255, 0.05);
-  padding: 3px 8px;
-  margin-right: 5px;
-  border-radius: 3px;
+  border: 1px solid var(--border); /* Un toque extra de estilo */
+  padding: 4px 10px;
+  border-radius: 4px;
+  white-space: nowrap; /* Evita que el texto de un solo tag se corte a la mitad */
+  color: var(--text-dim);
+  transition: 0.3s;
 }
 
+.tags span:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
 /* Contact Form */
 .contact-container {
   background: linear-gradient(145deg, #0f171e, #05080a);
