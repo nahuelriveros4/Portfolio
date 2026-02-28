@@ -25,6 +25,7 @@ body {
 header {
   padding: 20px 5%;
   top: 0;
+  position: sticky; /* Agregado para que te siga al scrollear */
   background: rgba(5, 8, 10, 0.9);
   backdrop-filter: blur(10px);
   z-index: 100;
@@ -160,7 +161,7 @@ h1 {
   transform: translateY(-5px);
 }
 
-
+/* Projects */
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
@@ -192,7 +193,6 @@ h1 {
 }
 
 .project-card:hover .project-screenshot {
-  filter: grayscale(0%);
   transform: scale(1.03);
 }
 
@@ -257,4 +257,46 @@ footer {
   font-size: 0.7rem;
   color: var(--text-dim);
   border-top: 1px solid var(--border);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets (hasta 992px) */
+@media (max-width: 992px) {
+  h1 { font-size: 2.8rem; }
+  .section { padding: 60px 5%; }
+  .contact-container {
+    grid-template-columns: 1fr; 
+  }
+}
+
+/* Móviles (hasta 600px) */
+@media (max-width: 600px) {
+  header { padding: 15px 5%; }
+  
+  .nav-links { display: none; } 
+  h1 { font-size: 2.2rem; }
+  .role { font-size: 1rem; }
+  
+  .hero { padding: 60px 20px; }
+  
+  .btn-social {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+
+  .project-card {
+    flex: 1 1 100%; 
+  }
+
+  .project-img-wrapper {
+    height: 180px; /
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
 }
